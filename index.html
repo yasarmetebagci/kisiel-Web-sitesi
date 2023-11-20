@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizin Adınız - Anasayfa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, nav, section, footer {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #home {
+            background-color: #f9f9f9;
+        }
+
+        #home h2 {
+            color: #333;
+        }
+
+        .hobbies {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .hobby {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hobby img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobby p {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            width: 80%;
+            text-align: center;
+            color: #333;
+        }
+
+        .hobby:hover p {
+            display: block;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        .hobby:hover img {
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .hobby img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sizin Adınız</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="contact.html">İletişim</a>
+    </nav>
+
+    <section id="home">
+        <h2>Anasayfa</h2>
+        <p>Merhaba, benim web siteme hoş geldiniz!</p>
+
+        <div class="hobbies">
+          
+
+    <div class="hobby">
+        <img src="resimler/balık.jpg" alt="Balık tutma">
+        <p>Balık tutma benim için sadece bir hobi değil, aynı zamanda bir rahatlama ve bağ kurma aracıdır. Doğanın güzellikleri içinde huzurlu bir gün geçirmek ve oltamın ucunda bekleyen sürprizleri keşfetmek beni her zaman heyecanlandırır. Bir günün stresinden uzaklaşmak ve sakin sularda zaman geçirmek, benim için eşsiz bir mutluluk kaynağıdır.</p>
+    </div>
+    <div class="hobby">
+        <img src="resimler/paten.jpg" alt="Paten Sürme">
+        <p>Paten sürmek enerjik, özgür ve eğlenceli bir aktivitedir. Rüzgarın yüzümde hissi, hızın verdiği adrenalini hissetmek gerçekten harika. Her kayışta özgürlük hissi beni motive ediyor. Paten sürmek, bedensel aktiviteyi seven biri olarak sağlıklı bir yaşam tarzını desteklemenin yanı sıra, çevremdeki manzarayı keşfetmek için harika bir yol.</p>
+    </div>
+    <div class="hobby">
+        <img src="resimler/bilgisyar.jpg" alt="Bilgisayar Kullanma">
+        <p>Bilgisayar kullanmak sadece bir iş aracı değil, aynı zamanda yaratıcılığımı ifade etme ve dünya ile bağlantı kurma aracıdır. Programlama yapmak ve yeni teknolojileri keşfetmek beni heyecanlandırır. Ayrıca, bilgisayarım aracılığıyla farklı kültürlerden insanlarla iletişim kurmak ve bilgi paylaşmak benim için değerli bir deneyimdir. Bilgisayarlar, dünyayı keşfetmenin ve öğrenmenin sınırsız bir kapısını açar
+            . Bilgisayarlar, dünyayı keşfetmenin ve öğrenmenin sınırsız bir kapısını açar.</p>
+        </div>
+    
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sizin Adınız</p>
+    </footer>
+
+</body>
+
+</html>
